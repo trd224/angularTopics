@@ -1,0 +1,10 @@
+<p #el>First Line</p>
+
+<p #el>Second Line</p>
+
+<p #el>Third Line</p>
+
+<p #el>Forth Line</p>
+
+<app-view-child-child #childView></app-view-child-child>
+<button (click)="inc()">Increament</button>{{childView?.counter}}<button (click)="dec()">Decrement</button>

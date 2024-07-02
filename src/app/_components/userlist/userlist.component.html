@@ -1,0 +1,15 @@
+<h2>Active User</h2>
+<ul>
+    <ng-container *ngFor="let user of userList">
+        <li *ngIf="user.status == true" (click)="changeStatus(user)">{{user.name}}</li>
+    </ng-container>
+
+    
+</ul>
+
+<h2>Inactive User</h2>
+<ul>
+    <ng-container *ngFor="let user of userList">
+        <li *ngIf="user.status == false" (click)="changeStatus(user)">{{user.name}}</li>
+    </ng-container>
+</ul>

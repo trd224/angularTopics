@@ -1,0 +1,15 @@
+<form [formGroup]="myForm" (submit)="submitForm()">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+        <!-- <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
+            <div *ngIf="myForm.get('name')?.errors && myForm.get('name')?.errors['required']">name is required</div>
+            
+        </div> -->
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+    </div>
+    <button type="submit">Submit</button>
+</form>

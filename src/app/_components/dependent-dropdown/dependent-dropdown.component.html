@@ -1,0 +1,9 @@
+<!-- <p>dependent-dropdown works!</p> -->
+
+<select (change)="getDistrict($event)">
+    <option *ngFor="let s of state" [value]="s.name">{{s.name}}</option>
+</select>
+
+<select>
+    <option *ngFor="let d of district" [value]="d">{{d}}</option>
+</select>

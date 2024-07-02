@@ -1,0 +1,6 @@
+<div>
+    <input type="text" #inputRef/><button (click)="change(inputRef)">Button</button>
+</div>
+<app-lifecycle-child [value]="value">
+    <strong>{{value}}</strong>
+</app-lifecycle-child>

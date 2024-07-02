@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="filterString">
+<ul>
+    <li *ngFor="let item of list | filterList:filterString">{{item.name}}</li>
+</ul>
